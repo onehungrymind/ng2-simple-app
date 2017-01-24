@@ -1,3 +1,4 @@
+![image](https://cloud.githubusercontent.com/assets/1544557/22271768/912bb056-e253-11e6-81f5-3d6dda384bb8.png)
 # ng2-simple-app
 
 A REST-ful master-detail application built using Angular 2 and angular-cli.
