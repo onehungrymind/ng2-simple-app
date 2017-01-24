@@ -8,13 +8,11 @@ import { ItemsService } from './shared';
 
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
-import { WidgetsComponent } from './widgets/widgets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemsComponent,
-    WidgetsComponent
+    ItemsComponent
   ],
   imports: [
     BrowserModule,
