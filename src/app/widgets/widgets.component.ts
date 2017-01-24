@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { WidgetsService, Widget } from '../shared';
-import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-widgets',
@@ -17,7 +16,7 @@ export class WidgetsComponent implements OnInit {
     this.selectedCopy = Object.assign({}, value);
   }
 
-  constructor(private widgetsService: WidgetsService,) {}
+  constructor(private widgetsService: WidgetsService) {}
 
   ngOnInit() {
     this.widgetsService.loadWidgets()
@@ -25,7 +24,7 @@ export class WidgetsComponent implements OnInit {
   }
 
   resetWidget() {
-    let emptyWidget: Widget = {id: null, name: '', description: ''};
+    let emptyWidget: Widget = {id: null};
     this.selectedWidget = emptyWidget;
   }
 
