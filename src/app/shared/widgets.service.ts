@@ -11,10 +11,6 @@ export class WidgetsService {
     return [...this.widgets];
   }
 
-  loadWidget(id) {
-    return this.widgets.find(widget => widget.id === +id);
-  }
-
   saveWidget(widget: Widget) {
     return (widget.id) ? this.updateWidget(widget) : this.createWidget(widget);
   }
