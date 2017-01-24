@@ -9,13 +9,15 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class WidgetsComponent implements OnInit {
   widgets: Array<Widget>;
-  selectedWidget: Widget;
+  originalName: string;
+  selectedCopy: Widget = {id: null};
 
-  constructor(
-    private widgetsService: WidgetsService,
-    private router: Router,
-    private route: ActivatedRoute
-  ) {}
+  set selectedWidget(value: Widget){
+    if (value) { this.originalName = value.name; }
+    this.selectedCopy = Object.assign({}, value);
+  }
+
+  constructor(private widgetsService: WidgetsService,) {}
 
   ngOnInit() {
     this.widgetsService.loadWidgets()

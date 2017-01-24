@@ -30,13 +30,12 @@
       "id": 2,
       "img": "number-2-blue-icon.png",
       "name": "Widget 2",
-      "description": "This is a description!"
+      "description": "This is a description edited!"
     },
     {
       "id": 3,
-      "img": "number-3-icon.png",
       "name": "Widget 3",
-      "description": "This is a lovely widget"
+      "description": "This is a lovely widget ;)"
     }
   ]
 }

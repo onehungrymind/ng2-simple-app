@@ -9,16 +9,12 @@ import { ItemsService, WidgetsService } from './shared';
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
 import { WidgetsComponent } from './widgets/widgets.component';
-import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.component';
-import { WidgetDetailComponent } from './widgets/widget-detail/widget-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemsComponent,
-    WidgetsComponent,
-    WidgetsListComponent,
-    WidgetDetailComponent
+    WidgetsComponent
   ],
   imports: [
     BrowserModule,
