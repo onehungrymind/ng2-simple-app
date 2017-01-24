@@ -15,11 +15,6 @@ export class WidgetsService {
       .map(res => res.json());
   }
 
-  loadWidget(id) {
-    return this.http.get(`${BASE_URL}${id}`)
-      .map(res => res.json());
-  }
-
   saveWidget(widget: Widget) {
     return (widget.id) ? this.updateWidget(widget) : this.createWidget(widget);
   }
