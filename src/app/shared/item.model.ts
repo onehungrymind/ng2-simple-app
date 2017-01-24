@@ -3,5 +3,4 @@ export interface Item {
   img?: string;
   name?: string;
   description?: string;
-  featured?: boolean;
 }

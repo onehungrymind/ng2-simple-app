@@ -3,5 +3,4 @@ export interface Widget {
   img?: string;
   name?: string;
   description?: string;
-  featured?: boolean;
 }
