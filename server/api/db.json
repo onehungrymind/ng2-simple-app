@@ -9,15 +9,14 @@
     {
       "id": 2,
       "img": "number-2-blue-icon.png",
-      "name": "Item 2 edited!",
+      "name": "Item 2",
       "url": "number-2-blue-icon.png",
       "description": "This is a description!"
     },
     {
+      "id": 3,
       "name": "Item 3",
-      "description": "This is a lovely item",
-      "img": "number-3-icon.png",
-      "id": 3
+      "description": "This is a lovely item"
     }
   ],
   "widgets": [

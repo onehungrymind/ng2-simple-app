@@ -8,7 +8,13 @@ import { ItemsService, Item } from '../shared';
 })
 export class ItemsComponent implements OnInit {
   items: Array<Item>;
-  selectedItem: Item;
+  originalName: string;
+  selectedCopy: Item = {id: null};
+
+  set selectedItem(value: Item){
+    if (value) { this.originalName = value.name; }
+    this.selectedCopy = Object.assign({}, value);
+  }
 
   constructor(private itemsService: ItemsService) {}
 
