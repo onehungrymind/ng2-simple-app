@@ -9,13 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class WidgetsComponent implements OnInit {
   widgets: Array<Widget>;
-  originalName: string;
-  selectedCopy: Widget = {id: null};
-
-  set selectedWidget(value: Widget){
-    if (value) { this.originalName = value.name; }
-    this.selectedCopy = Object.assign({}, value);
-  }
+  selectedWidget: Widget = {id: null};
 
   constructor(private widgetsService: WidgetsService,) {}
 
@@ -24,36 +18,12 @@ export class WidgetsComponent implements OnInit {
   }
 
   resetWidget() {
-    let emptyWidget: Widget = {id: null, name: '', description: ''};
+    let emptyWidget: Widget = {id: null};
     this.selectedWidget = emptyWidget;
   }
 
   selectWidget(widget: Widget) {
     this.selectedWidget = widget;
-  }
-
-  saveWidget(widget: Widget) {
-    const responseWidget = this.widgetsService.saveWidget(widget);
-
-    if (widget.id) {
-      this.replaceWidget(responseWidget);
-    } else {
-      this.pushWidget(responseWidget);
-    }
-
-    // Generally, we would want to wait for the result of `widgetsService.saveWidget`
-    // before resetting the current widget.
-    this.resetWidget();
-  }
-
-  replaceWidget(widget: Widget) {
-    this.widgets = this.widgets.map(mapWidget => {
-      return mapWidget.id === widget.id ? widget : mapWidget;
-    });
-  }
-
-  pushWidget(widget: Widget) {
-    this.widgets.push(widget);
   }
 
   deleteWidget(widget: Widget) {

@@ -9,19 +9,16 @@ export const widgets = [
   {
     "id": 1,
     "name": "Widget 1",
-    "description": "This is a description",
-    "featured": true
+    "description": "This is a description"
   },
   {
     "id": 2,
     "name": "Widget 2",
-    "description": "This is a description!",
-    "featured": false
+    "description": "This is a description!"
   },
   {
     "id": 3,
     "name": "Widget 3",
-    "description": "This is a lovely widget",
-    "featured": false
+    "description": "This is a lovely widget"
   }
 ];
