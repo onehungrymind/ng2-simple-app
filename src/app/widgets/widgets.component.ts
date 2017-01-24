@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { WidgetsService, Widget } from '../shared';
-import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-widgets',
@@ -11,7 +10,7 @@ export class WidgetsComponent implements OnInit {
   widgets: Array<Widget>;
   selectedWidget: Widget = {id: null};
 
-  constructor(private widgetsService: WidgetsService,) {}
+  constructor(private widgetsService: WidgetsService) {}
 
   ngOnInit() {
     this.widgets = this.widgetsService.loadWidgets();
