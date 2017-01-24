@@ -2,15 +2,12 @@
   "items": [
     {
       "id": 1,
-      "img": "number-1.png",
       "name": "Item 1",
       "description": "This is a description"
     },
     {
       "id": 2,
-      "img": "number-2-blue-icon.png",
       "name": "Item 2",
-      "url": "number-2-blue-icon.png",
       "description": "This is a description!"
     },
     {
@@ -22,13 +19,11 @@
   "widgets": [
     {
       "id": 1,
-      "img": "number-1.png",
       "name": "Widget 1",
       "description": "This is a description"
     },
     {
       "id": 2,
-      "img": "number-2-blue-icon.png",
       "name": "Widget 2",
       "description": "This is a description edited!"
     },

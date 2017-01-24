@@ -17,10 +17,12 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+.mdl-cell--6-col:first-child {
+  cursor: pointer;
+}
 .item-card.mdl-card {
   width: 100%;
   min-height: inherit;
-  cursor: pointer;
 }
 .item-card .mdl-textfield {
   width: 100%;
