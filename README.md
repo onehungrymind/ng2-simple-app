@@ -17,6 +17,7 @@ To get started run the commands below.
 $ git clone https://github.com/onehungrymind/ng2-simple-app.git
 $ cd ng2-simple-app
 $ npm install
+$ npm i extract-text-webpack-plugin@2.0.0-rc.0 --save-dev
 $ npm start
 ```
 
